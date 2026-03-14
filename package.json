@@ -1,0 +1,27 @@
+{
+  "name": "cremarch",
+  "version": "1.0.0",
+  "description": "cremarch's personal card CLI",
+  "type": "module",
+  "bin": {
+    "cremarch": "./bin/card.js"
+  },
+  "files": [
+    "bin/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cremarch/cremarch.git"
+  },
+  "keywords": ["card", "cli"],
+  "author": "cremarch <info@cremarch.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cremarch/cremarch/issues"
+  },
+  "homepage": "https://github.com/cremarch/cremarch#readme",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.6.2"
+  }
+}
