@@ -1,6 +1,6 @@
 {
   "name": "cremarch",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "cremarch's personal card CLI",
   "type": "module",
   "bin": {
@@ -13,7 +13,10 @@
     "type": "git",
     "url": "git+ssh://git@github.com/cremarch/cremarch.git"
   },
-  "keywords": ["card", "cli"],
+  "keywords": [
+    "card",
+    "cli"
+  ],
   "author": "cremarch <info@cremarch.com>",
   "license": "MIT",
   "bugs": {
