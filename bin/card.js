@@ -3,20 +3,33 @@
 import chalk from 'chalk';
 import boxen from 'boxen';
 
-const name    = chalk.bold.white('cremarch');
-const title   = chalk.cyan('Web Backend Engineer');
+const banner = [
+  ' ██████╗██████╗ ███████╗███╗   ███╗ █████╗ ██████╗  ██████╗██╗  ██╗',
+  '██╔════╝██╔══██╗██╔════╝████╗ ████║██╔══██╗██╔══██╗██╔════╝██║  ██║',
+  '██║     ██████╔╝█████╗  ██╔████╔██║███████║██████╔╝██║     ███████║',
+  '██║     ██╔══██╗██╔══╝  ██║╚██╔╝██║██╔══██║██╔══██╗██║     ██╔══██║',
+  '╚██████╗██║  ██║███████╗██║ ╚═╝ ██║██║  ██║██║  ██║╚██████╗██║  ██║',
+  ' ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝',
+];
 
-const github  = chalk.gray('GitHub:') + '  ' + chalk.green('https://github.com/cremarch');
-const x       = chalk.gray('X:') + '       ' + chalk.green('https://x.com/cremarch123');
-const email   = chalk.gray('Email:') + '   ' + chalk.green('info@cremarch.com');
+const fg     = chalk.hex('#e5e5e5');
+const muted  = chalk.hex('#6b6b6b');
+
+const logo = banner.map(line => fg(line)).join('\n');
+
+const role = fg('Web Backend Engineer');
+
+const row = (label, value) =>
+  muted(label.padEnd(8)) + fg(value);
 
 const card = [
-  name,
-  title,
+  logo,
   '',
-  github,
-  x,
-  email,
+  role,
+  '',
+  row('GitHub', 'https://github.com/cremarch'),
+  row('X',      'https://x.com/cremarch123'),
+  row('Email',  'info@cremarch.com'),
 ].join('\n');
 
 console.log(
@@ -24,6 +37,6 @@ console.log(
     padding: 1,
     margin: 1,
     borderStyle: 'round',
-    borderColor: 'cyan',
+    borderColor: '#3a3a3a',
   })
 );
