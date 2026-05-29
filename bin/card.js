@@ -28,7 +28,7 @@ const card = [
   role,
   '',
   row('GitHub', 'https://github.com/cremarch'),
-  row('X',      'https://x.com/cremarch123'),
+  row('X',      'https://x.com/cremarch_com'),
   row('Email',  'info@cremarch.com'),
 ].join('\n');
 
